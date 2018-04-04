@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Agregar una pregunta</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-title>
+        Agregar una pregunta
+      </ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Titulo</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Categoria</ion-label>
+          <ion-select>
+            <ion-option value="cienciasNaturales">Ciencias Naturales</ion-option>
+            <ion-option value="cienciasSociales">Ciencias Sociales</ion-option>
+            <ion-option value="artes">Artes</ion-option>
+            <ion-option value="finanzas">Finanzas</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Topic</ion-label>
+          <ion-select>
+            <ion-option value="fisica">Fisica</ion-option>
+            <ion-option value="quimica">Quimica</ion-option>
+            <ion-option value="biologia">Biologia</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Sub-topic</ion-label>
+          <ion-select>
+            <ion-option value="mrua">Movimiento rectilineo uniforme</ion-option>
+            <ion-option value="caidaLibre">Caida libre</ion-option>
+            <ion-option value="tiroParabolico">Tiro parabólico</ion-option>
+            <ion-option value="tiroVertical">Tiro vertical</ion-option>
+          </ion-select>
+        </ion-item>
+        <!-- <ion-item>
+          <ion-input type="file"></ion-input>
+        </ion-item> -->
+        <ion-item>
+          <ion-label floating>Respuesta 1:</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Respuesta 2:</ion-label>          
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Respuesta 3:</ion-label>          
+          <ion-input type="text" value=""></ion-input>                              
+        </ion-item>
+      </ion-list>
+      <ion-item>
+        <button ion-button (click)="onSubmit()">Subir pregunta!</button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Tests
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let test of tests">
+
+    <ion-card (click)="onClick(test)">
+      <ion-card-header>
+        <ion-title>
+          {{ test.name }}
+        </ion-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ test.description }}
+      </ion-card-content>
+    </ion-card>
+    
+  </div>
+</ion-content>

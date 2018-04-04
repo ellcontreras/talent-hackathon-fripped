@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Fripped</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addQuestionSubmit()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="alerta">
+  <!-- <ion-navbar color="danger" class="alerta">
+    <ion-item color="danger">
+      <ion-label ion-start>Tienes un examen el 5 de abril, estudia!</ion-label>
+    </ion-item>
+  </ion-navbar> -->
+  <ion-item color="danger">
+    <ion-label ion-start>Tienes un examen el 5 de abril, estudia!</ion-label>
+  </ion-item>
+</ion-content>
+
+<ion-content padding id="contenido">
+  <ion-title>Selecciona una categoria:</ion-title>
+  <div *ngFor="let category of categories">
+
+    <components-category-card
+      name="{{ category.name }}"
+      description="{{ category.description }}">
+    </components-category-card>
+    
+  </div>
+</ion-content>

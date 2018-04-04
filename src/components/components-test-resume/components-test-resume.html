@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-header>
+    <ion-title>
+        {{ title }}
+    </ion-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>{{ description }}</p>
+    <ion-list>
+      <ion-item>
+          <span ion-start>Resultados:</span>
+          <ion-badge color="secondary" item-end>{{ good }}</ion-badge>
+          <ion-badge color="danger" item-end>{{ wrong }}</ion-badge>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
